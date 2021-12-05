@@ -17,8 +17,8 @@ public class Main {
 //    printare.print("dsjah");
 
 //    Chrome
-    System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-    WebDriver driver = new ChromeDriver();
+//    System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+//    WebDriver driver = new ChromeDriver();
 
 //    Firefox
 //    System.setProperty("webdriver.gecko.driver", "C:\\Users\\catalin.istrate\\Desktop\\geckodriver.exe");
@@ -28,7 +28,7 @@ public class Main {
 //    System.setProperty("webdriver.edge.driver", "C:\\Users\\catalin.istrate\\Desktop\\msedgedriver.exe");
 //    WebDriver driver2 = new EdgeDriver();
 
-    driver.get("https://rahulshettyacademy.com");
+//    driver.get("https://rahulshettyacademy.com");
 //    System.out.println(driver.getTitle());
 //    ;
 //    System.out.println(driver.getCurrentUrl());
