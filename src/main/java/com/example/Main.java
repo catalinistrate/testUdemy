@@ -42,8 +42,7 @@ public class Main {
 //    CoreJavaBrushUp2.exemplu();
 
 //    MethodsT d1 = new MethodsT();
-//    d1.getData();
-    //todo
+//    d1.getData()
 
 
   }
