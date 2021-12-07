@@ -1,14 +1,11 @@
 package com.example;
 
-import static com.example.CoreJavaBrushUp2.exemplu;
-
-import com.example.interfete.MethodsT;
-import com.example.interfete.PrintareFisier;
+import java.time.Duration;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Main {
@@ -23,7 +20,7 @@ public class Main {
     WebDriver driver = new ChromeDriver();
 
 //    Firefox
-//    System.setProperty("webdriver.gecko.driver", "C:\\Users\\catalin.istrate\\Desktop\\geckodriver.exe");
+//    System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
 //    WebDriver driver1 = new FirefoxDriver();
 
 //    Microsoft Edge (trebuie driver pt versiunea 96)
@@ -39,7 +36,6 @@ public class Main {
     // driver.quit(); closes all the windows/quit the driver
 
 //  CoreJavaBrushUp1.exemplu();
-
 
 //    CoreJavaBrushUp2.exemplu();
 
@@ -65,20 +61,20 @@ public class Main {
 //    driver.quit();
 //
 
-      driver.get("http://facebook.com");
-      Thread.sleep(5000);
-      WebElement cookie_button= driver.findElement(By.xpath("/html/body/div[3]/div[2]/div/div/div/div/div[3]/button[2]"));
-      cookie_button.click();
-      driver.findElement(By.id("email")).sendKeys("This is blabla");
+//      driver.get("http://facebook.com");
+//      Thread.sleep(5000);
+//      WebElement cookie_button= driver.findElement(By.xpath("/html/body/div[3]/div[2]/div/div/div/div/div[3]/button[2]"));
+//      cookie_button.click();
+//      driver.findElement(By.id("email")).sendKeys("This is blabla");
 
-
-
-
+    LoginTester.testLogin(driver);
+//    LoginTester.testLogin(driver1);
   }
 
 //public static String getData3(){
 //  System.out.println("Hello world");
 //  return "oana";
 //}
+
 
 }
