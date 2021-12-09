@@ -43,12 +43,13 @@ public class Main {
 //    d1.getData()
 //
 //
-//    driver.get("http://google.com"); //hit url on the browser
-//    System.out.println(driver.getTitle()); //validate if your page title is correct
-//    Thread.sleep(3000);
-//    driver.findElement(By.id("L2AGLb")).click();
-//    Thread.sleep(3000);
-//
+    driver.get("http://google.com"); //hit url on the browser
+    System.out.println(driver.getTitle()); //validate if your page title is correct
+    Thread.sleep(3000);
+    driver.findElement(By.xpath("/html/body/div[2]/div[2]/div[3]/span/div/div/div/div[3]/button[2]/div")).click();
+    driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input")).sendKeys("oana");
+    Thread.sleep(3000);
+
 //
 //    System.out.println(driver.getCurrentUrl());//validate if you are landed on correct url
 //    System.out.println(driver.getPageSource());//prints page source
@@ -67,8 +68,11 @@ public class Main {
 //      cookie_button.click();
 //      driver.findElement(By.id("email")).sendKeys("This is blabla");
 
-    LoginTester.testLogin(driver);
+//    LoginTester.testLogin(driver);
 //    LoginTester.testLogin(driver1);
+
+
+
   }
 
 //public static String getData3(){
